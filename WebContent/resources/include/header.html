@@ -1,0 +1,136 @@
+<style>
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+.modal-dialog{
+	width:300px!important;
+}
+
+.logo_model{
+	margin-top: -10px!important;
+	width: 250px!important;
+}
+
+
+}
+.modal-dialog{
+	width:450px;
+}
+.logo_model{
+	margin-top:-50px;
+	width: 200px;
+}
+</style>
+<!-- Header -->
+	<header class="header-main">
+		<!-- Top Header -->
+
+		<!-- Logo Block -->
+		<div class="middle-header container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<div class="col-md-4 logo-block pull-left">
+					<a href="index.html">
+						<img src="images/logo.png" style="margin-top:-40px;width: 250px;" alt="Logo" />
+					</a> 
+				</div>
+				<div class="col-md-6 pull-right">
+					<div class="location">
+						<img src="images/icon/user.png" alt="Location" />
+						<p>
+							<span onclick="window.location='registration.html'" style="cursor:pointer" >Sign Up</span>
+							<span data-toggle="modal" data-target="#myModal" style="cursor:pointer;margin-top:5px;" >Sign In</span>
+						</p>
+					</div>
+				</div>
+			</div><!-- Container /- -->
+		</div><!-- Logo Block /- -->
+		<nav class="navbar ow-navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand logo-block">
+						<a href="index.php">
+							<img src="images/logo.png" style="margin-top:-30px;width: 250px;" alt="Logo" />
+						</a>
+					</div>
+				</div>
+				<script>
+					var url = window.location.pathname;
+					var base = new String(url).substring(url.lastIndexOf('/') + 1); 
+					if(base.lastIndexOf(".") != -1)       
+					base = base.substring(0, base.lastIndexOf("."));
+					var base_name = base;
+					//alert(base_name);
+					if(base_name=='index'){
+					document.getElementById("index").classList.add('active');
+					} else if(base_name=='about') {
+					document.getElementById("about").classList.add('active');
+					} else if(base_name=='registration'){
+					document.getElementById("registration").classList.add('active');
+					} else if(base_name=='contact-us'){
+					document.getElementById("contact").classList.add('active');
+					}
+				</script>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li id="index" ><a href="index.html">Home</a></li>
+						<li id="about" ><a href="about.html">About Us</a></li>
+						<li id="registration" ><a href="registration.html">Registration</a></li>
+						<li id="contact" ><a href="contact-us.html">Contact US</a></li>							
+					</ul>						
+				</div>
+				<!--a href="registration.html">Book For A Ride</a-->
+			</div>
+		</nav>
+		  <!-- Modal -->
+		  <div class="modal fade" id="myModal" role="dialog">
+			<div style="" class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <div class="container" style="margin-bottom:15px;" >
+						<div class="col-md-8 logo-block pull-left">
+							<a href="#">
+								<img class="logo_model" src="images/logo.png" alt="Logo" />
+							</a> 
+						</div>
+						<div class="col-md-4 pull-right">
+						</div>
+					</div>
+				</div>
+				<div class="modal-body" style="margin-bottpm:40px;" >
+						<h4>
+							<span><i class="fa fa-lock" ></i> Sign In</span><br/>
+						</h4>
+						<form class="row" id="contact-form" method="post">
+							<div class="col-md-12 col-sm-12 form-group">
+								<label>Username</label>
+								<input type="text" class="form-control" name="contact-name" placeholder="Username" required>
+							</div>
+							<div class="col-md-12 col-sm-12 form-group">
+								<label>Password</label>
+								<input type="password" class="form-control" name="contact-email" placeholder="Password" required>
+							</div>
+							<div style="margin-top:-5px;" class="col-md-12 col-sm-12 checkbox">
+								<label><input type="checkbox"> Remember me</label><br/>
+								<a href="" >Forgot Your password?</a>
+							  </div>
+							<div class="col-md-12">
+								<button type="submit" id="btn_submit" class="btn btn-default">Login</button>
+							</div>
+							<div id="alert-msg" class="alert-msg"></div>
+						</form>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div>
+	</header><!-- Header /- -->
+	

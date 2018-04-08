@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.cab.controller.model.UserRegister" table="users">
+        <id name="id" type="java.lang.String" column="ID">
+            <generator class="assigned" />
+        </id>
+        <property name="userName" type="java.lang.String"  column="USERNAME" />
+        <property name="userPassword" type="java.lang.String"  column="PASSWORD" />
+        <property name="userFName" type="java.lang.String"  column="FNAME" />
+        <property name="userLName" type="java.lang.String"  column="LNAME" />
+        <property name="userPhoneNumber" type="java.lang.String"  column="PHONE" />
+        <property name="userAddress" type="java.lang.String"  column="ADDRESS" />
+        <property name="userCountry" type="java.lang.String"  column="COUNTRY" />
+        <property name="userState" type="java.lang.String"  column="STATE" />
+        <property name="userCity" type="java.lang.String"  column="CITY" />
+        <property name="userPCode" type="java.lang.String"  column="POST" />
+        <property name="userWAddress" type="java.lang.String"  column="WORK_ADDRESS" />
+        <property name="userWCountry" type="java.lang.String"  column="WORK_COUNTRY" />
+        <property name="userWState" type="java.lang.String"  column="WORK_STATE" />
+        <property name="userWCity" type="java.lang.String"  column="WORK_CITY" />
+        <property name="userWPCode" type="java.lang.String"  column="WORK_POST" />
+        <property name="userOTP" type="java.lang.String"  column="OTP" />
+        
+    </class>
+</hibernate-mapping>
