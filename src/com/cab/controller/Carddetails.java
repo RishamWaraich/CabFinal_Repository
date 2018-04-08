@@ -22,9 +22,9 @@ public class Carddetails {
 
 	@RequestMapping(value = "/card-details", method = RequestMethod.GET)
 	public ModelAndView authentication(HttpServletRequest request, HttpServletResponse response) {
-		 ModelAndView mav = new ModelAndView("card-details");
+		 ModelAndView mav2 = new ModelAndView("card-details");
 		    mav.addObject("user", new UserRegister());
-		    return mav;
+		    return mav2;
 	}
 	
 	
