@@ -62,7 +62,7 @@ public ModelAndView helloWorld() {
 		System.out.println(""+list.size());
 		
 		for(int i=0;i<list.size();i++) {
-			System.out.println(""+list.get(i));
+			System.out.println("Hello My friends"+list.get(i));
 			System.out.println(""+list.get(i).getUserName());
 		}
 	
