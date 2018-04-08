@@ -18,7 +18,7 @@ import com.cab.controller.model.UserRegister;
 import java.sql.*;
 
 /*
- * author: Crunchify.com
+ * author: Crunch.com
  * 
  */
  

@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.cab.controller.model.UserRegister;
  
 /*
- * author: Crunchify.com
+ * author: Crunch.com
  * 
  */
  
