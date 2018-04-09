@@ -7,10 +7,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ContactUs {
 
+	
+	
 	@RequestMapping("/contactus")
 	public String contactus() {
-
-	    return "contact-us";
+/* */
+	    return "contact-us immediately";
 	}
 	
 }
