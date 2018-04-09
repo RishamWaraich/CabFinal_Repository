@@ -12,7 +12,7 @@ public class rough {
 
 	@RequestMapping("/rough")
 	public String dashboard() {
-	    return "rough and tough";
+	    return "rough";
 	}
 	
 }
