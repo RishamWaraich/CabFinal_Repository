@@ -10,7 +10,7 @@ public class ContactUs {
 	@RequestMapping("/contactus")
 	public String contactus() {
 
-	    return "contact-us immediately";
+	    return "contact-us";
 	}
 	
 }
