@@ -10,9 +10,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class rough {
 
-	@RequestMapping("/rough")
+	@RequestMapping("/soft")
 	public String dashboard() {
-	    return "rough";
+	    return "soft";
 	}
 	
 }
