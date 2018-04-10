@@ -12,7 +12,7 @@ public class Dashboard {
 
 	@RequestMapping("/dashboard")
 	public String dashboard() {
-	    return "dashboard";
+	    return "dashboards";
 	}
 	
 }
